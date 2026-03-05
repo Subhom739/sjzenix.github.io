@@ -1,0 +1,222 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.header {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #fff;
+  padding: 18px 22px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Content Container ===== */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+/* ===== Phone Card ===== */
+.phone {
+  background: #ffffff;
+  margin-bottom: 28px;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phone:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+/* ===== Phone Image ===== */
+.phone img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* ===== Phone Text ===== */
+.phone h2 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.phone p {
+  margin: 0 0 12px;
+  color: #374151;
+  font-size: 15px;
+}
+
+/* ===== Specs Card ===== */
+.spec-card {
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* ===== Specs Table ===== */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: max-height 0.35s ease;
+}
+
+.spec-table th {
+  background: #0f172a;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.spec-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* Collapsed State */
+.spec-table.collapsed {
+  max-height: 220px;
+  display: block;
+  overflow: hidden;
+}
+
+/* ===== Read More Button ===== */
+.spec-toggle {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.spec-toggle:hover {
+  opacity: 0.9;
+}
+
+/* ===== Buy Buttons ===== */
+.buy a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.buy a:hover {
+  opacity: 0.9;
+}
+
+/* ===== Credit Text ===== */
+.credit {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  margin-top: 40px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(180deg, #e5e7eb, #f1f5f9);
+  color: #374151;
+  font-size: 14px;
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 600px) {
+  .phone {
+    padding: 14px;
+  }
+
+  .phone h2 {
+    font-size: 18px;
+  }
+
+  .spec-table td,
+  .spec-table th {
+    font-size: 13px;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .brand {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo .tagline {
+  font-size: 12px;
+  color: #c7d2fe;
+}
+.logo img {
+  display: block;
+}
+/* ===== LOGO & NAV FIX ===== */
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.logo .tagline {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #c7d2fe;
+}
+
+/* Navigation */
+.header nav {
+  margin-top: 12px;
+}
+
+.header nav a {
+  color: #e5e7eb;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header nav a:hover {
+  color: #93c5fd;
+}
